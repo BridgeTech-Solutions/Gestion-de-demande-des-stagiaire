@@ -237,34 +237,17 @@ export default function SettingsPage() {
         <Tabs defaultValue="profile" className="space-y-6">
           {/* Navigation responsive avec scroll horizontal sur mobile */}
           <div className="w-full overflow-x-auto">
-            <TabsList className="grid w-full min-w-max grid-cols-5 sm:min-w-0">
-              <TabsTrigger value="profile" className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm px-2 sm:px-4">
-                <User className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span className="hidden xs:inline">Profil</span>
-              </TabsTrigger>
-              <TabsTrigger
-                value="notifications"
-                className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm px-2 sm:px-4"
-              >
-                <Bell className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span className="hidden xs:inline">Notifications</span>
-              </TabsTrigger>
-              <TabsTrigger
-                value="security"
-                className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm px-2 sm:px-4"
-              >
-                <Shield className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span className="hidden xs:inline">Sécurité</span>
-              </TabsTrigger>
-              <TabsTrigger value="display" className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm px-2 sm:px-4">
-                <Palette className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span className="hidden xs:inline">Affichage</span>
-              </TabsTrigger>
-              <TabsTrigger value="privacy" className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm px-2 sm:px-4">
-                <Globe className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span className="hidden xs:inline">Confidentialité</span>
-              </TabsTrigger>
-            </TabsList>
+          <TabsList className="grid w-full min-w-max grid-cols-2 sm:min-w-0">
+  <TabsTrigger value="profile" className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm px-2 sm:px-4">
+    <User className="h-3 w-3 sm:h-4 sm:w-4" />
+    <span className="hidden xs:inline">Profil</span>
+  </TabsTrigger>
+  <TabsTrigger value="security" className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm px-2 sm:px-4">
+    <Shield className="h-3 w-3 sm:h-4 sm:w-4" />
+    <span className="hidden xs:inline">Sécurité</span>
+  </TabsTrigger>
+</TabsList>
+
           </div>
 
           <TabsContent value="profile">
